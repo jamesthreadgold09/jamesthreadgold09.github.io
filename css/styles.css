@@ -1312,3 +1312,63 @@ h2 {
 @media (max-width: 540px) {
   .field-row { grid-template-columns: 1fr; gap: 0; }
 }
+
+/* ---------- 404 ---------- */
+.nf {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 140px 80px;
+  overflow: hidden;
+  text-align: center;
+}
+.nf-inner { position: relative; z-index: 1; max-width: 640px; margin-inline: auto; }
+.nf-code {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(7rem, 26vw, 16rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  margin: 18px 0 8px;
+  background: linear-gradient(135deg, var(--ink) 30%, var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+}
+.nf-title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.nf-lead {
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+  max-width: 46ch;
+  margin: 0 auto 36px;
+}
+.nf-cta { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+
+/* Download CV button on the contact page */
+.cv-btn { margin-top: 30px; }
+
+/* ---------- Keyboard focus (visible only for keyboard users) ---------- */
+:focus { outline: none; }
+:focus-visible {
+  outline: 2.5px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.btn:focus-visible,
+.nav-cta:focus-visible {
+  outline-offset: 4px;
+}
+.project:focus-visible {
+  outline-offset: 6px;
+  border-radius: var(--radius);
+}
+.skip:focus-visible { outline-offset: 2px; }
