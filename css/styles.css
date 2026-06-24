@@ -524,6 +524,8 @@ h2 {
 .project:hover .project-img { transform: scale(1.04); }
 /* App-screen montages: show the whole thing, framed by a matching backdrop */
 .project-media--contain .project-img { object-fit: contain; padding: 18px; }
+/* Fill the whole card, no padding or contrasting background */
+.project-media--fill .project-img { object-fit: cover; object-position: center; }
 .media-dark { background: #0b0f0b; }
 .media-purple { background: #6b50bb; }
 .media-cream { background: #FDF3EA; }
@@ -733,6 +735,8 @@ h2 {
   height: 100%;
   object-fit: contain;
 }
+/* Fill the whole cover box, no padding or contrasting background */
+.cs-cover--fill img { object-position: center; }
 
 /* Inline figures */
 .cs-figure {

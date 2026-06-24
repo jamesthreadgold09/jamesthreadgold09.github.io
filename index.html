@@ -7,15 +7,34 @@
   <meta name="description" content="James Threadgold is a UX &amp; UI designer based in Buckinghamshire, crafting intuitive, considered digital products. The best design is the kind people don't notice, because it just works.">
   <meta name="theme-color" content="#FBF7F0">
 
-  <!-- Open Graph -->
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://jamesthreadgold.co.uk/">
+
+  <!-- Open Graph / social share -->
+  <meta property="og:site_name" content="James Threadgold">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jamesthreadgold.co.uk/">
   <meta property="og:title" content="James Threadgold | UX &amp; UI Designer">
   <meta property="og:description" content="Intuitive, considered digital products. Interface design &amp; prototyping based in Buckinghamshire.">
-  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jamesthreadgold.co.uk/assets/og/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="James Threadgold — UX &amp; UI Designer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="James Threadgold | UX &amp; UI Designer">
+  <meta name="twitter:description" content="Intuitive, considered digital products. Interface design &amp; prototyping based in Buckinghamshire.">
+  <meta name="twitter:image" content="https://jamesthreadgold.co.uk/assets/og/og-default.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 
@@ -35,10 +54,10 @@
         <span class="brand-name">James&nbsp;Threadgold</span>
       </a>
       <nav class="nav-links" id="navLinks" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#process">Process</a>
-        <a href="contact.html" class="nav-cta" data-magnetic>Let's talk</a>
+        <a href="/#about">About</a>
+        <a href="/#work">Work</a>
+        <a href="/#process">Process</a>
+        <a href="/contact/" class="nav-cta" data-magnetic>Let's talk</a>
       </nav>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span>
@@ -66,14 +85,14 @@
           intuitive, engaging and built to perform.
         </p>
         <div class="hero-cta reveal">
-          <a href="#work" class="btn btn-primary" data-magnetic>See selected work</a>
-          <a href="contact.html" class="btn btn-ghost" data-magnetic>Start a project</a>
+          <a href="/#work" class="btn btn-primary" data-magnetic>See selected work</a>
+          <a href="/contact/" class="btn btn-ghost" data-magnetic>Start a project</a>
         </div>
         <p class="hero-philosophy reveal">
           “The best design is the kind people don't notice, because it just works.”
         </p>
       </div>
-      <a href="#about" class="scroll-hint reveal" aria-label="Scroll to about">
+      <a href="/#about" class="scroll-hint reveal" aria-label="Scroll to about">
         <span>Scroll</span>
         <span class="scroll-line"></span>
       </a>
@@ -140,10 +159,10 @@
         </div>
 
         <div class="projects">
-          <a href="work/housing-matters.html" class="project reveal" data-tilt>
+          <a href="/work/housing-matters/" class="project reveal" data-tilt>
             <div class="project-media tone-1">
               <span class="project-index">01</span>
-              <img class="project-img" src="assets/work/hm-Hh8FaU.png" alt="Housing Matters website homepage: 'Are you struggling with your housing?'" loading="lazy">
+              <img class="project-img" src="/assets/work/hm-Hh8FaU-sm.jpg" srcset="/assets/work/hm-Hh8FaU-sm.jpg 1040w, /assets/work/hm-Hh8FaU.jpg 2000w" sizes="(max-width: 720px) 92vw, 506px" alt="Housing Matters website homepage: 'Are you struggling with your housing?'" loading="lazy" decoding="async">
             </div>
             <div class="project-info">
               <h3>Housing Matters</h3>
@@ -153,10 +172,10 @@
             </div>
           </a>
 
-          <a href="work/freshtrack.html" class="project reveal" data-tilt>
+          <a href="/work/freshtrack/" class="project reveal" data-tilt>
             <div class="project-media media-cream">
               <span class="project-index">02</span>
-              <img class="project-img" src="assets/work/ft-showcase.png" alt="FreshTrack iOS app: fridge tracker, AI meal planner and budget screens" loading="lazy">
+              <img class="project-img" src="/assets/work/ft-showcase-sm.jpg" srcset="/assets/work/ft-showcase-sm.jpg 1040w, /assets/work/ft-showcase.jpg 2000w" sizes="(max-width: 720px) 92vw, 506px" alt="FreshTrack iOS app: fridge tracker, AI meal planner and budget screens" loading="lazy" decoding="async">
             </div>
             <div class="project-info">
               <h3>FreshTrack</h3>
@@ -166,10 +185,10 @@
             </div>
           </a>
 
-          <a href="work/bar-hub.html" class="project reveal" data-tilt>
-            <div class="project-media project-media--contain media-purple">
+          <a href="/work/bar-hub/" class="project reveal" data-tilt>
+            <div class="project-media project-media--fill">
               <span class="project-index">03</span>
-              <img class="project-img" src="assets/work/bh-5JnV1y.png" alt="BarHub iOS app screens with the BarHub logo" loading="lazy">
+              <img class="project-img" src="/assets/work/bh-cover-v2-sm.jpg" srcset="/assets/work/bh-cover-v2-sm.jpg 1040w, /assets/work/bh-cover-v2.jpg 2000w" sizes="(max-width: 720px) 92vw, 506px" alt="BarHub iOS app screens with the BarHub logo" loading="lazy" decoding="async">
             </div>
             <div class="project-info">
               <h3>BarHub</h3>
@@ -179,10 +198,10 @@
             </div>
           </a>
 
-          <a href="work/the-jam-jar.html" class="project reveal" data-tilt>
+          <a href="/work/the-jam-jar/" class="project reveal" data-tilt>
             <div class="project-media tone-4">
               <span class="project-index">04</span>
-              <img class="project-img" src="assets/work/jj-RyMdO5.png" alt="The Jam Jar website homepage: 'Community Arts & Music Venue'" loading="lazy">
+              <img class="project-img" src="/assets/work/jj-RyMdO5.png" alt="The Jam Jar website homepage: 'Community Arts & Music Venue'" loading="lazy">
             </div>
             <div class="project-info">
               <h3>The Jam Jar</h3>
@@ -237,7 +256,7 @@
           Tell me what you're building.
         </p>
         <div class="contact-actions">
-          <a href="contact.html" class="btn btn-primary btn-lg" data-magnetic>Get in touch</a>
+          <a href="/contact/" class="btn btn-primary btn-lg" data-magnetic>Get in touch</a>
           <a href="https://www.linkedin.com/in/jamesthreadgold" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" data-magnetic>LinkedIn</a>
         </div>
         <p class="contact-note">Based in Buckinghamshire, UK · Working remotely worldwide</p>
@@ -250,16 +269,16 @@
     <div class="wrap footer-inner">
       <a href="#hero" class="brand">James&nbsp;Threadgold</a>
       <nav class="footer-links" aria-label="Footer">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#process">Process</a>
-        <a href="contact.html">Contact</a>
+        <a href="/#about">About</a>
+        <a href="/#work">Work</a>
+        <a href="/#process">Process</a>
+        <a href="/contact/">Contact</a>
         <a href="https://www.linkedin.com/in/jamesthreadgold" target="_blank" rel="noopener">LinkedIn</a>
       </nav>
       <p class="footer-meta">© <span id="year">2026</span> James Threadgold · UX &amp; UI Designer</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>
