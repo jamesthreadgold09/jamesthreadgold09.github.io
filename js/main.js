@@ -188,7 +188,7 @@
     }
   }
 
-  /* ---------- Contact form (Netlify Forms + AJAX) ---------- */
+  /* ---------- Contact form (Web3Forms + AJAX) ---------- */
   const form = document.getElementById("contactForm");
   if (form) {
     const status = document.getElementById("formStatus");
@@ -236,14 +236,15 @@
       if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
       setStatus("", "");
 
-      const data = new URLSearchParams(new FormData(form)).toString();
-      fetch("/", {
+      const payload = JSON.stringify(Object.fromEntries(new FormData(form)));
+      fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: data,
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: payload,
       })
-        .then((res) => {
-          if (!res.ok) throw new Error("Bad response");
+        .then((res) => res.json())
+        .then((json) => {
+          if (!json.success) throw new Error(json.message || "Bad response");
           form.reset();
           setStatus("success", "Thanks — your message is on its way. I'll reply within 1-2 business days.");
         })
