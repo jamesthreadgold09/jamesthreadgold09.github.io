@@ -68,7 +68,7 @@
           <div><dt>Built with</dt><dd>Figma, Xcode, SwiftUI</dd></div>
         </dl>
 
-        <div class="cs-cover cs-cover--fill reveal"><img src="/assets/work/bh-cover-v2.jpg" srcset="/assets/work/bh-cover-v2-sm.jpg 1040w, /assets/work/bh-cover-v2.jpg 2000w" sizes="(max-width: 1180px) 100vw, 1052px" alt="BarHub iOS app: venue profile, pub crawl planner and news screens, with the BarHub logo" decoding="async"></div>
+        <div class="cs-cover cs-cover--fill reveal"><img src="/assets/work/bh-cover-v3.jpg" srcset="/assets/work/bh-cover-v3-sm.jpg 1040w, /assets/work/bh-cover-v3.jpg 2000w" sizes="(max-width: 1180px) 100vw, 1052px" alt="BarHub iOS app: venue profile, pub crawl planner and map screens" decoding="async"></div>
       </div>
     </section>
 
@@ -81,22 +81,160 @@
         </div>
 
         <div class="cs-block reveal">
-          <h2>Research</h2>
-          <ul class="cs-list">
-            <li>Competitive analysis: a SWOT of Google Maps and Pub Finder</li>
-            <li>Surveyed 30 users, revealing weekly pub visits driven by atmosphere and pricing</li>
-            <li>Three user personas, each with a mapped journey</li>
-          </ul>
+          <h2>Research &amp; insights</h2>
+          <p>I ran a mixed-methods research phase: an online survey of 30 potential users, three personas with mapped journeys, and a competitive SWOT. The survey was clear about what actually drives a choice of venue: <strong>atmosphere and pricing come first</strong>, ahead of distance or brand. People wanted to find places that fit a mood, then plan a night around them.</p>
+          <p>To find the gap in the market, I ran a SWOT on the two tools people were already using:</p>
+          <div class="cs-compare">
+            <div class="cs-compare__card">
+              <span class="cs-compare__name">Google Maps</span>
+              <span class="cs-compare__tag">Generalist</span>
+              <p class="cs-compare__h cs-compare__h--str">Strengths</p>
+              <ul class="cs-compare__list--str">
+                <li>Vast location database</li>
+                <li>Trusted user reviews</li>
+                <li>Deep integration with other Google services</li>
+              </ul>
+              <p class="cs-compare__h cs-compare__h--weak">Weaknesses</p>
+              <ul class="cs-compare__list--weak">
+                <li>No pub or nightlife niche</li>
+                <li>No personalisation</li>
+                <li>Nothing for planning a night across venues</li>
+              </ul>
+            </div>
+            <div class="cs-compare__card">
+              <span class="cs-compare__name">Pub Finder</span>
+              <span class="cs-compare__tag">Niche</span>
+              <p class="cs-compare__h cs-compare__h--str">Strengths</p>
+              <ul class="cs-compare__list--str">
+                <li>Clear pub &amp; nightlife focus</li>
+                <li>Curated listings and ratings</li>
+                <li>Social sharing built in</li>
+              </ul>
+              <p class="cs-compare__h cs-compare__h--weak">Weaknesses</p>
+              <ul class="cs-compare__list--weak">
+                <li>Thin user base</li>
+                <li>Inconsistent data quality</li>
+                <li>Weak search and filtering</li>
+              </ul>
+            </div>
+          </div>
+          <p class="cs-gap"><strong>The wedge:</strong> combine the strengths of both (map-first discovery, a genuine niche focus, personalised recommendations and crawl planning) while fixing the weaknesses neither had solved.</p>
         </div>
 
         <div class="cs-block reveal">
-          <h2>The solution</h2>
-          <p>A <strong>no-login, map-first iOS app</strong> designed to get people out the door fast: personalised recommendations, rich venue profiles, and an integrated pub crawl planner for organising a night across multiple stops. I took it beyond prototypes, building a fully functional app in Xcode and SwiftUI from Figma designs.</p>
-          <blockquote class="cs-quote">Going out is social and spontaneous. The app had to feel the same: no sign-up wall, just a map and a plan.</blockquote>
-          <figure class="brandboard" style="margin-top:32px;" aria-label="BarHub brand identity: Suravaram and SF Pro Display typefaces with a purple, grey, black and white colour palette">
-            <div class="brandboard__logo">
-              <span class="brandboard__wordmark">BARHUB</span>
+          <h2>Personas</h2>
+          <p>Three personas kept the work honest, each a different reason to open the app.</p>
+          <div class="cs-personas">
+            <div class="cs-persona">
+              <div><span class="cs-persona__name">Harry Reed</span><span class="cs-persona__role">21 · Business student</span></div>
+              <div><span class="cs-persona__label">Needs</span><span class="cs-persona__val">Efficient planning and simple navigation for a night out.</span></div>
+              <div><span class="cs-persona__label">Frustration</span><span class="cs-persona__val">Thin venue detail and confusing navigation.</span></div>
             </div>
+            <div class="cs-persona">
+              <div><span class="cs-persona__name">Emma Jones</span><span class="cs-persona__role">24 · Postgraduate</span></div>
+              <div><span class="cs-persona__label">Needs</span><span class="cs-persona__val">Local insight to plan a night in an unfamiliar city.</span></div>
+              <div><span class="cs-persona__label">Frustration</span><span class="cs-persona__val">No local knowledge and no personalisation.</span></div>
+            </div>
+            <div class="cs-persona">
+              <div><span class="cs-persona__name">Matthew Perry</span><span class="cs-persona__role">31 · Tech professional</span></div>
+              <div><span class="cs-persona__label">Needs</span><span class="cs-persona__val">Plan a multi-stop night (a stag do) with plenty of options.</span></div>
+              <div><span class="cs-persona__label">Frustration</span><span class="cs-persona__val">Clunky, unintuitive planning tools.</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-block reveal">
+          <h2>Design process</h2>
+          <p>I worked from structure outwards. A priority guide ranked what mattered most, a critical flow chart mapped the journeys, and wireframes turned both into layouts, all before any visual design.</p>
+          <div class="cs-process">
+            <figure class="cs-stage">
+              <div class="cs-priority" aria-label="Priority guide ranking app features by user value">
+                <div class="cs-priority__head"><span class="cs-priority__goal">Goal</span> Help people find pubs, plan a night, and let venues promote themselves.</div>
+                <ol class="cs-priority__list">
+                  <li class="cs-priority__row cs-priority__row--core"><span class="cs-priority__rank">01</span><span class="cs-priority__name">Map / Locator</span><span class="cs-priority__intent">Find pubs on a map around you</span></li>
+                  <li class="cs-priority__row cs-priority__row--core"><span class="cs-priority__rank">02</span><span class="cs-priority__name">Pub details &amp; info</span><span class="cs-priority__intent">Accessibility, facilities and details for each pub</span></li>
+                  <li class="cs-priority__row cs-priority__row--core"><span class="cs-priority__rank">03</span><span class="cs-priority__name">Pub crawl planner</span><span class="cs-priority__intent">Organise pubs in order and plan a route</span></li>
+                  <li class="cs-priority__row"><span class="cs-priority__rank">04</span><span class="cs-priority__name">News &amp; offers</span><span class="cs-priority__intent">Venues share offers and promote themselves</span></li>
+                  <li class="cs-priority__row"><span class="cs-priority__rank">05</span><span class="cs-priority__name">Favourites</span><span class="cs-priority__intent">Save the pubs you love</span></li>
+                  <li class="cs-priority__row"><span class="cs-priority__rank">06</span><span class="cs-priority__name">Search</span><span class="cs-priority__intent">Look up specific locations</span></li>
+                  <li class="cs-priority__row"><span class="cs-priority__rank">07</span><span class="cs-priority__name">Share</span><span class="cs-priority__intent">Send pub locations and crawls to friends</span></li>
+                </ol>
+              </div>
+              <figcaption class="cs-figcaption">The priority guide ranked features by user value, putting the map, venue details and the crawl planner at the core and pushing secondary features down.</figcaption>
+            </figure>
+            <figure class="cs-stage">
+              <div class="cs-flow" aria-label="Critical flow chart: a three-tab structure of Map, Planner and News">
+                <div class="cs-flow__top"><span class="cs-flow__entry">Splash <span>→</span> Home</span></div>
+                <div class="cs-flow__conn"></div>
+                <div class="cs-flow__tabs">
+                  <div class="cs-flow__tab">
+                    <h4>Map</h4>
+                    <ul><li>Search for a pub</li><li>View a location</li><li>Details, reviews, directions</li></ul>
+                  </div>
+                  <div class="cs-flow__tab">
+                    <h4>Planner</h4>
+                    <ul><li>Create a crawl</li><li>Add venues or auto-generate</li><li>Upcoming &amp; past crawls</li></ul>
+                  </div>
+                  <div class="cs-flow__tab">
+                    <h4>News</h4>
+                    <ul><li>Latest offers</li><li>Nearby venues</li></ul>
+                  </div>
+                </div>
+              </div>
+              <figcaption class="cs-figcaption">The critical flow chart mapped the key journeys (discover on the map, plan a crawl, read the news) and settled on a clear three-tab structure: Map, Planner, News.</figcaption>
+            </figure>
+            <figure class="cs-stage">
+              <div class="cs-wire" aria-label="Low-fidelity wireframes for the map, pub details and planner screens">
+                <figure>
+                  <div class="cs-wire__phone">
+                    <div class="cs-wire__bar cs-wire__bar--title"></div>
+                    <div class="cs-wire__map">
+                      <span class="cs-wire__pin" style="top:24%;left:30%;"></span>
+                      <span class="cs-wire__pin" style="top:46%;left:62%;"></span>
+                      <span class="cs-wire__pin" style="top:64%;left:38%;"></span>
+                    </div>
+                    <div class="cs-wire__bar"></div>
+                    <div class="cs-wire__tabs"><span></span><span></span><span></span></div>
+                  </div>
+                  <figcaption>Map</figcaption>
+                </figure>
+                <figure>
+                  <div class="cs-wire__phone">
+                    <div class="cs-wire__block" style="height:34%;"></div>
+                    <div class="cs-wire__bar cs-wire__bar--title"></div>
+                    <div class="cs-wire__row"></div>
+                    <div class="cs-wire__row"></div>
+                    <div class="cs-wire__btn"></div>
+                    <div class="cs-wire__tabs"><span></span><span></span><span></span></div>
+                  </div>
+                  <figcaption>Pub details</figcaption>
+                </figure>
+                <figure>
+                  <div class="cs-wire__phone">
+                    <div class="cs-wire__bar"></div>
+                    <div class="cs-wire__bar cs-wire__bar--title"></div>
+                    <div class="cs-wire__row"></div>
+                    <div class="cs-wire__row"></div>
+                    <div class="cs-wire__row"></div>
+                    <div class="cs-wire__block cs-wire__block--grow"></div>
+                    <div class="cs-wire__tabs"><span></span><span></span><span></span></div>
+                  </div>
+                  <figcaption>Planner</figcaption>
+                </figure>
+              </div>
+              <figcaption class="cs-figcaption">Low-fidelity wireframes turned the structure into screens, exploring layout and navigation before committing to visual design.</figcaption>
+            </figure>
+          </div>
+          <p class="cs-gap">From there I built a high-fidelity, interactive prototype in Figma, using iOS templates and SF Symbols for a native feel. Then I designed a brand to match.</p>
+          <div class="cs-screens">
+            <figure class="cs-screen"><img src="/assets/work/bh-pub-details.jpg" alt="BarHub venue profile for The Lazy Dog: details, rating, gallery and quick actions" loading="lazy" decoding="async"><figcaption>Venue profile</figcaption></figure>
+            <figure class="cs-screen"><img src="/assets/work/bh-map.jpg" alt="BarHub map view with pub markers across Bristol" loading="lazy" decoding="async"><figcaption>Map-first home</figcaption></figure>
+            <figure class="cs-screen"><img src="/assets/work/bh-news.jpg" alt="BarHub news and offers feed with promotions from local pubs" loading="lazy" decoding="async"><figcaption>News &amp; offers</figcaption></figure>
+          </div>
+          <p class="cs-figcaption" style="text-align:left;">The wireframes became a high-fidelity prototype: rich venue profiles, a map-first home, and a news and offers feed.</p>
+          <p>One small change came straight from user feedback. The app was originally called <strong>“Boozer”</strong>; testers felt the word was dated and off-putting, so it became <strong>“BarHub”</strong>, a central hub for discovering local pubs and bars. Minor on its own, but a clear sign of letting users steer the design.</p>
+          <figure class="cs-stage" style="margin-top:24px;">
+            <div class="brandboard" aria-label="BarHub brand identity: Suravaram and SF Pro Display typefaces with a purple, grey, black and white colour palette">
             <div class="brandboard__type">
               <div class="brandboard__type-item">
                 <span class="brandboard__type-name">Suravaram</span>
@@ -129,16 +267,71 @@
                 <span class="brandboard__role">Base</span>
               </li>
             </ul>
+            </div>
+            <figcaption class="cs-figcaption">The BarHub brand: type pairing and colour palette.</figcaption>
           </figure>
-          <figcaption class="cs-figcaption">The BarHub brand: type pairing and colour palette.</figcaption>
         </div>
 
         <div class="cs-block reveal">
-          <h2>Outcomes</h2>
-          <div class="cs-outcomes">
-            <div class="cs-outcome"><span class="num">30</span><span class="lbl">Users surveyed to shape the concept</span></div>
-            <div class="cs-outcome"><span class="num">3</span><span class="lbl">Personas &amp; journey maps</span></div>
-            <div class="cs-outcome"><span class="num">1</span><span class="lbl">Fully functional SwiftUI build</span></div>
+          <h2>The build</h2>
+          <p>Most UX projects stop at a prototype. I took BarHub all the way to a <strong>fully functional iOS app</strong>, rebuilding the Figma designs in Xcode and SwiftUI.</p>
+          <p>The real engineering challenge was the map. Rendering live pub markers meant learning <strong>MapKit</strong>, using <code>MKLocalSearch</code> to query for pubs around the user’s location and drop them onto the map.</p>
+          <div class="cs-code">
+            <div class="cs-code__bar">searchPubs() · MapKit local search · BarHubApp</div>
+            <pre><code><span class="kw">func</span> <span class="fn">searchPubs</span>() {
+    <span class="kw">let</span> request = MKLocalSearch.Request()
+    request.naturalLanguageQuery = <span class="str">"pubs"</span>
+    request.region = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: <span class="num">51.481230</span>,
+                                       longitude: <span class="num">-2.580748</span>),
+        latitudinalMeters: <span class="num">5000</span>,
+        longitudinalMeters: <span class="num">5000</span>)
+}</code></pre>
+          </div>
+          <p class="cs-gap">Coming to Xcode and SwiftUI as a new iOS developer meant a steep learning curve. I closed the gap with self-directed learning and an agile build-test-refine loop, shipping the app in small working iterations rather than all at once.</p>
+          <p>I also made a deliberate cut: <strong>no login screen</strong>. Going out is spontaneous, so forcing an account would only add friction. Skipping it keeps the experience instant while protecting user privacy. You open the app and you’re straight on the map.</p>
+          <p>The <strong>pub crawl planner</strong> is BarHub’s signature feature. Per the research, no existing app offered anything like it. You name a crawl, add venues in order or auto-generate a route, and the app plots the path between stops so a group can move through the night without breaking stride.</p>
+          <div class="cs-screens cs-screens--2">
+            <figure class="cs-screen"><img src="/assets/work/bh-planner.jpg" alt="BarHub planner showing active, upcoming and past pub crawls" loading="lazy" decoding="async"><figcaption>Plan &amp; go</figcaption></figure>
+            <figure class="cs-screen"><img src="/assets/work/bh-new-crawl.jpg" alt="Creating a new BarHub pub crawl with an ordered list of bars and an auto-generate option" loading="lazy" decoding="async"><figcaption>Build a crawl</figcaption></figure>
+          </div>
+          <p class="cs-figcaption" style="text-align:left;">The pub crawl planner: name a crawl, add venues in order or auto-generate a route between them.</p>
+        </div>
+
+        <div class="cs-block reveal">
+          <h2>Testing &amp; iteration</h2>
+          <p>I ran small, focused user-testing sessions throughout the build, with a handful of target-demographic users doing real tasks: find a venue, view a review, plan a crawl. Quick to run, and rich in detail.</p>
+          <p>The most important finding came early: the <strong>initial navigation confused people</strong> and stopped them completing tasks. They couldn’t reliably move from discovery, to detail, to planning.</p>
+          <p>So I <strong>redesigned the navigation</strong>, streamlining the flows down to the three-tab Map / Planner / News structure from the flow chart and clearing the paths between them. Task completion improved in the next round of testing.</p>
+          <blockquote class="cs-quote">Test, learn, fix, then test again. The navigation only worked because users told me the first version didn’t.</blockquote>
+        </div>
+
+        <div class="cs-block reveal">
+          <h2>Outcomes &amp; reflection</h2>
+          <div class="cs-wins">
+            <div class="cs-win">
+              <h3>Navigation redesigned from user testing</h3>
+              <p>The biggest usability gain came straight from watching real users struggle, then fixing what tripped them up.</p>
+            </div>
+            <div class="cs-win">
+              <h3>No-login, map-first by design</h3>
+              <p>Cutting the sign-up wall made discovery instant and kept user data out of the picture.</p>
+            </div>
+            <div class="cs-win">
+              <h3>Prototype → functional SwiftUI build</h3>
+              <p>Shipping a working iOS app, not just a clickable mockup, is rare for a UX portfolio, and it proved the design held up in real code.</p>
+            </div>
+            <div class="cs-win">
+              <h3>A pub crawl planner no one else had</h3>
+              <p>The research found no competitor offered crawl planning; it became BarHub’s clearest point of difference.</p>
+            </div>
+          </div>
+          <div class="cs-note">
+            <h3>What I’d do differently</h3>
+            <ul>
+              <li>Test continuously, not just at key stages. A more systematic loop would have caught usability issues earlier, when they’re cheaper to fix.</li>
+              <li>Ramp up on Xcode and SwiftUI sooner. An earlier start on the iOS toolchain would have eased the pressure on the build phase.</li>
+            </ul>
           </div>
         </div>
 
@@ -151,7 +344,7 @@
               </svg>
             </span>
             <span class="cs-download__text">
-              <span class="cs-download__title">BarHub — Comprehensive project report</span>
+              <span class="cs-download__title">BarHub project report</span>
               <span class="cs-download__meta">PDF · 34 pages · research, design &amp; build</span>
             </span>
             <span class="cs-download__cta">Download</span>
@@ -163,7 +356,7 @@
     <section class="cs-next">
       <div class="wrap">
         <span class="eyebrow">Next project</span><br>
-        <a href="/work/the-jam-jar/" data-magnetic>The Jam Jar <span class="arrow">→</span></a>
+        <a href="/work/housing-matters/" data-magnetic>Housing Matters <span class="arrow">→</span></a>
       </div>
     </section>
   </main>
