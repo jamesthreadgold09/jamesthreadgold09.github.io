@@ -20,7 +20,7 @@
   <meta property="og:image" content="https://jamesthreadgold.co.uk/assets/og/og-the-jam-jar.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="The Jam Jar — Case study by James Threadgold">
+  <meta property="og:image:alt" content="The Jam Jar: case study by James Threadgold">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The Jam Jar Case Study | James Threadgold">
   <meta name="twitter:description" content="Redesigning a Bristol music venue's website to balance raw local energy with real accessibility: events, ticketing and a WooCommerce shop.">
@@ -89,9 +89,9 @@
         <p class="cs-tagline">Redesigning a local Bristol music venue's website, balancing raw energy with real accessibility.</p>
 
         <dl class="cs-meta reveal">
-          <div><dt>Role</dt><dd>Web Designer, UX Designer, WordPress Developer</dd></div>
-          <div><dt>Client</dt><dd>The Jam Jar, a Bristol music venue &amp; community space</dd></div>
-          <div><dt>Scope</dt><dd>Six bespoke pages</dd></div>
+          <div><dt>Role</dt><dd>Web &amp; UX Designer, WordPress Developer</dd></div>
+          <div><dt>Context</dt><dd>University brief, UWE Bristol</dd></div>
+          <div><dt>Scope</dt><dd>Five bespoke pages</dd></div>
           <div><dt>Built with</dt><dd>Figma, WordPress, WooCommerce</dd></div>
         </dl>
 
@@ -103,34 +103,92 @@
       <div class="wrap cs-prose">
         <div class="cs-block reveal">
           <h2>The problem</h2>
-          <p>The venue needed a website serving several functions at once: event discovery and booking, merchandise sales, community support, and full accessibility compliance. The real challenge was to <strong>design something that felt genuinely local and authentic</strong> while meeting real accessibility requirements across both desktop and mobile.</p>
+          <p>The Jam Jar is a grassroots music venue and community space in Bristol. For a university brief I redesigned its website around four jobs it has to do at once: help people discover and book events, sell merchandise, rally community support, and do all of it while being genuinely accessible.</p>
+          <p>The real challenge was tone. A grassroots venue should feel bold and a bit raw online, the way it does in person, while staying usable for everyone who wants to come through the door. Local character and real accessibility had to live in the same design, not pull against each other.</p>
         </div>
 
         <div class="cs-block reveal">
-          <h2>The approach</h2>
+          <h2>Research &amp; insights</h2>
+          <p>Before wireframing, I looked at how comparable Bristol venues and local businesses present themselves online, studying <a href="https://www.clockfactorybristol.com" target="_blank" rel="noopener">The Clock Factory</a> and <a href="https://document-bristol.com" target="_blank" rel="noopener">Document</a> in particular. The aim was to learn from sites speaking to a similar audience rather than design on personal taste alone.</p>
+          <p>That comparison shaped three decisions:</p>
           <ul class="cs-list">
-            <li>Competitor research analysing similar local venues</li>
-            <li>Figma wireframes: desktop-first, then adapted for mobile</li>
-            <li>Gestalt principles applied throughout the layout</li>
-            <li>An accessible black-and-white primary palette ensuring strong contrast</li>
+            <li><strong>Navigation:</strong> keep the top-level structure short and predictable, so events, shop and support are never more than a tap away.</li>
+            <li><strong>Content organisation:</strong> lead each page with the one thing a visitor came for, then layer detail beneath it.</li>
+            <li><strong>Visual presentation:</strong> let photography carry the venue's atmosphere while the interface stays quiet around it.</li>
+          </ul>
+          <p>To keep the layouts coherent I leaned on Gestalt principles throughout:</p>
+          <ul class="cs-list">
+            <li><strong>Proximity:</strong> grouping related items so their relationships read at a glance.</li>
+            <li><strong>Similarity:</strong> styling like elements alike to establish repeatable patterns.</li>
+            <li><strong>Continuity:</strong> guiding the eye through each page in a deliberate flow.</li>
+            <li><strong>Closure:</strong> using implied shape and boundary to tie sections into whole units.</li>
           </ul>
         </div>
 
         <div class="cs-block reveal">
+          <h2>Design decisions</h2>
+          <p>The palette starts from accessibility. A black and white base gives strong, dependable contrast, then red and green accents appear sparingly to flag the things that matter, an event to book or a button to press, without shouting over the content.</p>
+          <ul class="cs-swatches">
+            <li class="cs-swatch"><span class="cs-swatch__chip" style="background:#111111;"></span><span class="cs-swatch__hex">#111111</span><span class="cs-swatch__role">Primary</span></li>
+            <li class="cs-swatch"><span class="cs-swatch__chip" style="background:#FFFFFF;"></span><span class="cs-swatch__hex">#FFFFFF</span><span class="cs-swatch__role">Base</span></li>
+            <li class="cs-swatch"><span class="cs-swatch__chip" style="background:#E2362B;"></span><span class="cs-swatch__hex">#E2362B</span><span class="cs-swatch__role">Accent</span></li>
+            <li class="cs-swatch"><span class="cs-swatch__chip" style="background:#1C5B4F;"></span><span class="cs-swatch__hex">#1C5B4F</span><span class="cs-swatch__role">Accent</span></li>
+          </ul>
+          <figcaption class="cs-figcaption">Representative palette: black and white primaries for contrast, with red and green accents used sparingly.</figcaption>
+          <p class="cs-gap">Type is set in <strong>Roboto</strong>, picked for clean readability across screen sizes. Staying with one family and using its weights for hierarchy kept the pages cohesive without introducing competing typefaces.</p>
+          <p>The layout follows patterns people already know: a clear header and navigation, focused content sections, and an informative footer. Familiar structure lowers the effort of finding anything. I wireframed web-first in Figma, then adapted each screen down to mobile so the two experiences stayed consistent.</p>
+        </div>
+
+        <div class="cs-block reveal">
+          <h2>Accessibility, by design</h2>
+          <p>The brief asked for real accessibility, not a checkbox, so I gave it a dedicated page rather than burying the details, offered the same information as a downloadable PDF, and carried the high-contrast palette through the whole site.</p>
+          <p>What that page sets out plainly:</p>
+          <ul class="cs-list">
+            <li>The venue sits on the first floor: the main entrance has 19 steps with a handrail and a passing point, and a wider secondary entrance can be opened with staff assistance on request.</li>
+            <li>There is no accessible toilet on site; the nearest is in Cabot Circus, roughly 200m away, and a private staff toilet can be made available.</li>
+            <li>Personal assistants get free tickets, arranged ahead of the event or on the door.</li>
+            <li>Strobe lighting is generally avoided, and guests prone to seizures can ask staff to confirm before an event.</li>
+            <li>Assistance dogs are welcome.</li>
+          </ul>
+          <p>Surfacing this up front is a design decision in itself: it tells disabled visitors what to expect before they arrive, which is exactly where trust starts.</p>
+        </div>
+
+        <div class="cs-block reveal">
           <h2>The build</h2>
-          <p>I built six fully functional pages (home, events, shop, support, about and accessibility) on WordPress. <strong>WooCommerce</strong> handled e-commerce with custom styling, and The Events Calendar plugin added integrated ticketing. Performance was tuned with image compression and lazy loading.</p>
+          <p>I built five bespoke pages (home, events, shop, support, and a combined about and accessibility page) in WordPress. <strong>WooCommerce</strong> powers the shop with custom styling, and <strong>The Events Calendar</strong> adds integrated listings and ticketing. Both plugins were customised so they read as part of one brand rather than bolted-on tools. Performance was tuned with image compression and lazy loading.</p>
           <blockquote class="cs-quote">A grassroots venue should feel like one online, bold and a bit raw, without ever locking out the people it serves.</blockquote>
           <div class="cs-gallery">
             <figure><img src="/assets/work/jj-V64KdY.png" alt="The Jam Jar events page listing upcoming gigs with ticket links" loading="lazy"></figure>
             <figure><img src="/assets/work/jj-E9kTvR.png" alt="The Jam Jar WooCommerce shop page with branded hoodie merchandise" loading="lazy"></figure>
             <figure><img src="/assets/work/jj-hHcflA.png" alt="The Jam Jar support page encouraging donations to the grassroots venue" loading="lazy"></figure>
           </div>
-          <figcaption class="cs-figcaption">Events, shop and support pages: three of the six bespoke pages built in WordPress.</figcaption>
+          <figcaption class="cs-figcaption">Events, shop and support: three of the five bespoke pages built in WordPress.</figcaption>
         </div>
 
         <div class="cs-block reveal">
-          <h2>Outcome</h2>
-          <p>The standout achievement was integrating third-party plugins while maintaining a cohesive brand identity throughout the purchase and event flows. The live site is no longer hosted (the university hosting expired), but the full Figma wireframes remain as a record of the design.</p>
+          <h2>Outcome &amp; reflection</h2>
+          <div class="cs-wins">
+            <div class="cs-win">
+              <h3>One brand across third-party tools</h3>
+              <p>WooCommerce and The Events Calendar were customised to disappear into a single, consistent identity through the browse, book and buy flows.</p>
+            </div>
+            <div class="cs-win">
+              <h3>Everything under one roof</h3>
+              <p>Event discovery, ticketing, merchandise, community support and accessibility all live in one CMS the venue can maintain itself.</p>
+            </div>
+            <div class="cs-win">
+              <h3>Accessibility as a first-class page</h3>
+              <p>A high-contrast design and a dedicated, downloadable accessibility page put inclusion in plain sight rather than the small print.</p>
+            </div>
+          </div>
+          <div class="cs-note">
+            <h3>What I'd do differently</h3>
+            <ul>
+              <li>Run structured user testing earlier and with a more diverse group, rather than leaning mainly on peer feedback during the build. It would have surfaced usability issues while they were still cheap to fix.</li>
+            </ul>
+          </div>
+          <p class="cs-gap">The live site is no longer hosted (the university hosting expired), but the full Figma wireframes remain as a record of the design.</p>
+          <a class="cs-livelink" href="https://www.figma.com/design/u3EbhVDlrSqRwGXDA8aYSS/The-Jam-JarWireframe" target="_blank" rel="noopener">View the wireframes <span class="arrow">→</span></a>
         </div>
       </div>
     </section>

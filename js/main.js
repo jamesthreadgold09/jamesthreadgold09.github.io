@@ -1,5 +1,5 @@
 /* ============================================================
-   James Threadgold — Portfolio interactions
+   James Threadgold Portfolio interactions
    ============================================================ */
 (function () {
   "use strict";
@@ -63,43 +63,12 @@
       { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
     );
     // stagger groups of reveals that share a parent
-    document.querySelectorAll(".hero-inner, .about-body, .projects, .steps, .about-stats").forEach((group) => {
+    document.querySelectorAll(".hero-inner, .about-body, .projects, .steps").forEach((group) => {
       group.querySelectorAll(":scope > .reveal, :scope > * > .reveal").forEach((el, i) => {
         el.dataset.delay = i * 70;
       });
     });
     revealEls.forEach((el) => io.observe(el));
-  }
-
-  /* ---------- Count-up stats ---------- */
-  const counters = document.querySelectorAll("[data-count]");
-  if (counters.length) {
-    const countObs = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          const el = entry.target;
-          const target = parseInt(el.dataset.count, 10);
-          const suffix = el.dataset.suffix || "";
-          if (reduceMotion) {
-            el.textContent = target + suffix;
-          } else {
-            const dur = 1400;
-            const start = performance.now();
-            const tick = (now) => {
-              const p = Math.min((now - start) / dur, 1);
-              const eased = 1 - Math.pow(1 - p, 3);
-              el.textContent = Math.round(target * eased) + suffix;
-              if (p < 1) requestAnimationFrame(tick);
-            };
-            requestAnimationFrame(tick);
-          }
-          obs.unobserve(el);
-        });
-      },
-      { threshold: 0.6 }
-    );
-    counters.forEach((c) => countObs.observe(c));
   }
 
   /* ---------- Custom cursor (fine pointers only) ---------- */
@@ -246,7 +215,7 @@
         .then((json) => {
           if (!json.success) throw new Error(json.message || "Bad response");
           form.reset();
-          setStatus("success", "Thanks — your message is on its way. I'll reply within 1-2 business days.");
+          setStatus("success", "Thanks, your message is on its way. I'll reply within 1-2 business days.");
         })
         .catch(() => {
           setStatus(
