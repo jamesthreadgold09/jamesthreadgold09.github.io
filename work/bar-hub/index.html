@@ -30,6 +30,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamesthreadgold.co.uk/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://jamesthreadgold.co.uk/#work" },
+          { "@type": "ListItem", "position": 3, "name": "BarHub", "item": "https://jamesthreadgold.co.uk/work/bar-hub/" }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "BarHub",
+        "headline": "BarHub Case Study",
+        "url": "https://jamesthreadgold.co.uk/work/bar-hub/",
+        "image": "https://jamesthreadgold.co.uk/assets/og/og-bar-hub.png",
+        "description": "A map-first, no-login iOS app connecting people with local pubs through personalised recommendations and an integrated pub crawl planner.",
+        "inLanguage": "en-GB",
+        "creator": { "@type": "Person", "name": "James Threadgold", "url": "https://jamesthreadgold.co.uk/" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="cursor" id="cursor" aria-hidden="true"></div>

@@ -16,6 +16,10 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://jamesthreadgold.co.uk/">
 
+  <!-- Google Search Console: verify the domain via DNS (recommended) OR paste your
+       URL-prefix token below and uncomment this line. See docs/seo-google-search-console.md -->
+  <!-- <meta name="google-site-verification" content="YOUR_TOKEN_HERE"> -->
+
   <!-- Open Graph / social share -->
   <meta property="og:site_name" content="James Threadgold">
   <meta property="og:type" content="website">
@@ -40,18 +44,32 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "James Threadgold",
-    "jobTitle": "UX & UI Designer",
-    "url": "https://jamesthreadgold.co.uk/",
-    "image": "https://jamesthreadgold.co.uk/assets/og/og-default.png",
-    "sameAs": ["https://www.linkedin.com/in/jamesthreadgold"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "Buckinghamshire",
-      "addressCountry": "GB"
-    },
-    "knowsAbout": ["UX Design", "UI Design", "User Research", "Prototyping", "Mobile App Design", "Web Design", "Accessibility"]
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://jamesthreadgold.co.uk/#website",
+        "url": "https://jamesthreadgold.co.uk/",
+        "name": "James Threadgold",
+        "description": "Portfolio of James Threadgold, a UX & UI designer based in Buckinghamshire.",
+        "inLanguage": "en-GB",
+        "publisher": { "@id": "https://jamesthreadgold.co.uk/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://jamesthreadgold.co.uk/#person",
+        "name": "James Threadgold",
+        "jobTitle": "UX & UI Designer",
+        "url": "https://jamesthreadgold.co.uk/",
+        "image": "https://jamesthreadgold.co.uk/assets/og/og-default.png",
+        "sameAs": ["https://www.linkedin.com/in/jamesthreadgold"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Buckinghamshire",
+          "addressCountry": "GB"
+        },
+        "knowsAbout": ["UX Design", "UI Design", "User Research", "Prototyping", "Mobile App Design", "Web Design", "Accessibility"]
+      }
+    ]
   }
   </script>
 </head>
@@ -220,7 +238,7 @@
           <a href="/work/the-jam-jar/" class="project reveal" data-tilt>
             <div class="project-media tone-4">
               <span class="project-index">04</span>
-              <img class="project-img" src="/assets/work/jj-RyMdO5.png" alt="The Jam Jar website homepage: 'Community Arts & Music Venue'" loading="lazy">
+              <img class="project-img" src="/assets/work/jj-cover-sm.jpg" srcset="/assets/work/jj-cover-sm.jpg 1040w, /assets/work/jj-cover.jpg 1430w" sizes="(max-width: 720px) 92vw, 506px" alt="The Jam Jar website homepage: 'Community Arts & Music Venue'" loading="lazy" decoding="async">
             </div>
             <div class="project-info">
               <h3>The Jam Jar</h3>

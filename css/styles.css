@@ -1421,6 +1421,7 @@ h2 {
   .cs-gallery { grid-template-columns: 1fr; }
   .cs-figure--wide { width: 100%; margin-inline: 0; }
   .hero { padding-block: 120px 90px; }
+  .scroll-hint { display: none; }
   .cursor { display: none; }
 }
 @media (max-width: 480px) {
@@ -1448,9 +1449,9 @@ h2 {
   border-radius: var(--radius);
   border: 1px solid var(--line);
   background:
-    radial-gradient(110% 120% at 12% 0%, #FFEFE2 0%, transparent 52%),
-    radial-gradient(110% 120% at 100% 100%, #E7F1ED 0%, transparent 52%),
-    var(--paper-2);
+    radial-gradient(110% 120% at 12% 0%, #EAF3EC 0%, transparent 55%),
+    radial-gradient(120% 120% at 100% 100%, #C2DBC9 0%, transparent 55%),
+    #D7E8DD;
   padding: clamp(28px, 5vw, 56px) clamp(16px, 4vw, 40px);
   display: flex;
   flex-wrap: wrap;

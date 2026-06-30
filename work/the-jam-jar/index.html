@@ -30,6 +30,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamesthreadgold.co.uk/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://jamesthreadgold.co.uk/#work" },
+          { "@type": "ListItem", "position": 3, "name": "The Jam Jar", "item": "https://jamesthreadgold.co.uk/work/the-jam-jar/" }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "The Jam Jar",
+        "headline": "The Jam Jar Case Study",
+        "url": "https://jamesthreadgold.co.uk/work/the-jam-jar/",
+        "image": "https://jamesthreadgold.co.uk/assets/og/og-the-jam-jar.png",
+        "description": "Redesigning a Bristol music venue's website to balance raw local energy with real accessibility: events, ticketing and a WooCommerce shop.",
+        "inLanguage": "en-GB",
+        "creator": { "@type": "Person", "name": "James Threadgold", "url": "https://jamesthreadgold.co.uk/" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="cursor" id="cursor" aria-hidden="true"></div>
@@ -68,7 +95,7 @@
           <div><dt>Built with</dt><dd>Figma, WordPress, WooCommerce</dd></div>
         </dl>
 
-        <div class="cs-cover tone-4 reveal"><img src="/assets/work/jj-RyMdO5.png" alt="The Jam Jar homepage: 'Community Arts & Music Venue' over a live gig photo"></div>
+        <div class="cs-cover tone-4 reveal"><img src="/assets/work/jj-cover.jpg" srcset="/assets/work/jj-cover-sm.jpg 1040w, /assets/work/jj-cover.jpg 1430w" sizes="(max-width: 1180px) 100vw, 1052px" alt="The Jam Jar homepage: 'Community Arts & Music Venue' over a live gig photo" decoding="async"></div>
       </div>
     </section>
 

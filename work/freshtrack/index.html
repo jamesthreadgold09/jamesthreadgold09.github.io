@@ -30,6 +30,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamesthreadgold.co.uk/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://jamesthreadgold.co.uk/#work" },
+          { "@type": "ListItem", "position": 3, "name": "FreshTrack", "item": "https://jamesthreadgold.co.uk/work/freshtrack/" }
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "FreshTrack",
+        "headline": "FreshTrack Case Study",
+        "url": "https://jamesthreadgold.co.uk/work/freshtrack/",
+        "image": "https://jamesthreadgold.co.uk/assets/og/og-freshtrack.png",
+        "description": "A freemium iOS app helping budget-conscious UK students cut food waste with fridge tracking, AI meal suggestions and flatmate coordination.",
+        "inLanguage": "en-GB",
+        "creator": { "@type": "Person", "name": "James Threadgold", "url": "https://jamesthreadgold.co.uk/" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="cursor" id="cursor" aria-hidden="true"></div>
@@ -152,22 +179,41 @@
         <div class="cs-block reveal">
           <h2>The problem</h2>
           <p>UK households waste <strong>£14 billion worth of food annually</strong>. Yet students, the demographic with the least financial resilience, are among the worst affected. Existing tools either lacked student-specific features or were built around US infrastructure. No single app combined fridge tracking, expiry management, budget-conscious meal planning and shared-accommodation coordination for UK students.</p>
+          <p>My primary research put numbers to it: 52% of students regularly overspend on groceries and 53% throw food away two or three times a week, losing roughly <strong>£273 a year</strong> to expired food alone. In shared houses of three or more it compounds, with 18% higher overspending and 17% more food expiring before it is used.</p>
         </div>
 
         <div class="cs-block reveal">
-          <h2>Research &amp; analysis</h2>
-          <p>I approached it as both a designer and a business analyst, grounding the product in evidence before designing a single screen.</p>
+          <h2>Research &amp; insights</h2>
+          <p>I approached it as both a designer and a business analyst, grounding the product in evidence before designing a single screen. That meant primary research with <strong>103 UK students</strong>, alongside a PESTLE macro-environment analysis, a competitive landscape review, and empathy mapping of budget-stressed students.</p>
+          <div class="cs-outcomes">
+            <div class="cs-outcome"><span class="num">103</span><span class="lbl">UK students surveyed</span></div>
+            <div class="cs-outcome"><span class="num">52%</span><span class="lbl">Regularly overspend on groceries</span></div>
+            <div class="cs-outcome"><span class="num">£273</span><span class="lbl">Wasted per student each year</span></div>
+            <div class="cs-outcome"><span class="num">71%</span><span class="lbl">Living in shared houses</span></div>
+          </div>
+          <p class="cs-gap">A handful of findings shaped the product directly:</p>
           <ul class="cs-list">
-            <li>Macro-environment analysis (PESTLE)</li>
-            <li>Competitive landscape review</li>
-            <li>Customer research through empathy mapping</li>
-            <li>Persona development for budget-stressed UK students</li>
+            <li>47% regularly forget what food they already have, driving duplicate buying and waste. That made fridge tracking the foundation of the app.</li>
+            <li>The three most wanted features were budget alerts (61%), expiry reminders (58%) and recipe suggestions using what you already have (46%), so those became the three core screens.</li>
+            <li>76% preferred a freemium model over paying upfront, which set the business model.</li>
+            <li>Simplicity was the number one success factor: the target was a maximum of 30 seconds to log an item.</li>
           </ul>
         </div>
 
         <div class="cs-block reveal">
+          <h2>The competitive gap</h2>
+          <p>Mapping the market showed plenty of food apps, but none built for this user.</p>
+          <ul class="cs-list">
+            <li>Mealime (£50/yr) and PlateJoy (£99/yr) target affluent, general audiences with US-centric content and measurements, priced well out of a student budget.</li>
+            <li>Generic budgeting apps treat food as just another expense category, with none of the food-specific intelligence.</li>
+            <li>UK tools like Cherrypick and Mealia prove grocery integration works, but aren't built around student-specific needs.</li>
+          </ul>
+          <p>The gap was clear: no app combined fridge tracking, budget-conscious meal planning, UK retailer integration and shared-living coordination for students. That gap is FreshTrack.</p>
+        </div>
+
+        <div class="cs-block reveal">
           <h2>The solution</h2>
-          <p>A freemium iOS app that lets users log their fridge contents, receive <strong>AI-powered meal suggestions for items nearing expiry</strong>, build smart shopping lists, and coordinate with flatmates. Integration with Tesco and Sainsbury's APIs provided real-time pricing and automatic basket building, turning awareness into action at the moment of purchase.</p>
+          <p>A freemium iOS app that answers the three validated needs head on: a fridge tracker so you always know what you have, budget alerts that flag overspending early, and <strong>AI-powered meal suggestions for items nearing expiry</strong>. It also builds smart shopping lists and lets flatmates coordinate. Integration with Tesco and Sainsbury's APIs provided real-time pricing and automatic basket building, turning awareness into action at the moment of purchase.</p>
           <blockquote class="cs-quote">90% of consumers are aware of food waste, but only 67% actively work to reduce it. FreshTrack bridges that gap.</blockquote>
         </div>
 
@@ -241,7 +287,7 @@
             <div class="bmc-cell bmc-rev">
               <h4>Revenue streams</h4>
               <ul>
-                <li>Freemium → £4.99 / mo</li>
+                <li>Freemium → £2.99 / mo</li>
                 <li>Retailer commission</li>
                 <li>B2B uni licence</li>
                 <li>Conversion target: 23-37% free → paid · Sector CAGR 6.1%</li>
