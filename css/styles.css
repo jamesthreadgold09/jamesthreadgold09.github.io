@@ -687,6 +687,7 @@ h2 {
   margin-bottom: 10px;
 }
 .cs-meta dd { font-size: 1rem; font-weight: 500; color: var(--ink); line-height: 1.4; }
+.cs-meta--5 { grid-template-columns: repeat(5, 1fr); }
 
 /* Cover band */
 .cs-cover {
@@ -722,6 +723,8 @@ h2 {
   height: 100%;
   object-fit: contain;
 }
+/* Website screenshots: size the box to the screenshot's 16:9 shape */
+.cs-cover--shot { height: auto; aspect-ratio: 16 / 9; border: 1px solid var(--line); }
 /* Fill the whole cover box, no padding or contrasting background */
 .cs-cover--fill img { object-position: center; }
 
@@ -896,6 +899,9 @@ h2 {
   object-position: center top;
   display: block;
 }
+
+/* Phone screenshots: show the whole screen rather than a 3:4 crop */
+.cs-gallery--phone img { aspect-ratio: auto; }
 
 /* Design-process figure sequence */
 .cs-process { display: grid; gap: 30px; margin-top: 24px; }
